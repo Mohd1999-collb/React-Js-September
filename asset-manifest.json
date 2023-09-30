@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Js-September/static/css/main.0b4d69f8.css",
+    "main.js": "/React-Js-September/static/js/main.ab23c994.js",
+    "index.html": "/React-Js-September/index.html",
+    "main.0b4d69f8.css.map": "/React-Js-September/static/css/main.0b4d69f8.css.map",
+    "main.ab23c994.js.map": "/React-Js-September/static/js/main.ab23c994.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b4d69f8.css",
+    "static/js/main.ab23c994.js"
+  ]
+}
