@@ -1,20 +1,36 @@
 import React from 'react'
-import Home from './Home'
-import Contact from './Contact'
-import About from './About'
-import { Routes, Route } from 'react-router-dom'
-import Nomatch from './Nomatch'
+import { Link, NavLink, Outlet, useNavigate } from 'react-router-dom'
+
+
 const Navbar = () => {
+  const navigte = useNavigate();
   return (
-    <div style={{fontSize: '25px', margin:'20px'}}>
-        <Routes>
-            <Route path='/Home' element={<Home/>}/>
-            <Route path='/About' element={<About/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='*' element={<Nomatch/>}/>
-        </Routes>
+    <>
+    <div className='Navbar'>
+           {/* Using NavLink tag page is not reload and Link tag internally behaves like a Anchor tag */}
+          <NavLink to='/'>Home</NavLink>
+          <NavLink to='/about'>About</NavLink>
+          <NavLink to='/contact'>Contact</NavLink>
     </div>
+    </>
   )
 }
 
 export default Navbar
+
+
+
+ {/* Using anchor tag page is reload  */}
+        {/* <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a> */}
+
+        {/* Using Link tag page is not reload and Link tag internally behaves like a Anchor tag */}
+        {/* <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/contact'>Contact</Link> */}
+
+        {/* Using NavLink tag page is not reload and Link tag internally behaves like a Anchor tag */}
+        // <NavLink to='/'>Home</NavLink>
+        // <NavLink to='/about'>About</NavLink>
+        // <NavLink to='/contact'>Contact</NavLink>

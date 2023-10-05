@@ -18,11 +18,9 @@ import Player from "./Component/Context_API/Player";
 import CricketerProvider from "./Component/Context_API/CricketerProvider";
 import UseThemeSwitch from "./Component/Context_API/SwitchTheme/UseThemeSwitch";
 import ThemeProvider from "./Component/Context_API/SwitchTheme/ThemeProvider";
-import Navbar from "./Component/Routing/Navbar";
-import { Routes, Route } from "react-router-dom";
-import About from "./Component/Routing/About";
-import Home from "./Component/Routing/Home";
-import Nomatch from "./Component/Routing/Nomatch";
+
+import RouteContainer from "./Component/Routing/RouteContainer";
+import DisneyLand from "./Component/Routing/ParentChiledRouting/DisneyLand";
 
 
 
@@ -49,7 +47,9 @@ const App = () => {
             {/* <ThemeProvider>
                 <UseThemeSwitch />
             </ThemeProvider> */}
-            <Navbar/>
+            
+            {/* <RouteContainer/> */}
+            <DisneyLand/>
         </div>
     )
 }
